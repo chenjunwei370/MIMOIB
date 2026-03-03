@@ -6,7 +6,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import transforms
 import torchvision
-import MIMOIB_experiment.utils.channel as channel
+import utils.channel as channel
 import json
 import os
 from datetime import datetime
