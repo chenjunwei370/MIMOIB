@@ -369,22 +369,21 @@ if __name__ == "__main__":
     # model_weights_list = ['Complex_MIMOIB_infoNCE_SNR5_H1_20251023_205158.pth',
     #                       'Complex_MIMOIB_infoNCE_SNR5_H9_20251023_221212.pth']
     
-    model_weights_path = '/root/zhujl/MIMOIB/MIMO_IB_Compare/'  # JSCC model
+    model_weights_path = '/home/wen/project2/MIMO_IB_Compare/'  # 修改这里
     model_weights_list = [
-        # 'Complex_MIMOIB_infoNCE_batchsize128.pth',
-        #                   'Complex_MIMOIB_infoNCE_batchsize256.pth',
-        #                   'Complex_MIMOIB_infoNCE_batchsize512.pth',
-        #                   'Complex_MIMOIB_infoNCE_batchsize1024.pth',
-                          'MIMOIB_model/Complex_MIMOIB_infoNCEform1_SNR5_H5_20251023_125259.pth',
-                          'MIMOIB_model/Complex_MIMOIB_infoNCEform2_SNR5_H5_20251023_135654.pth']
+        'MIMOIB_model/Complex_MIMOIB_infoNCE_SNR5_H9_20260303_155117.pth',  # 使用你已有的文件
+        # 如果有第二个文件可以再加，没有就只留一个
+    ]
 
     # Initialize MNIST data loader
+    # 改为
     mnist_loader = MNISTDataLoader(
-        data_root='/root/zhujl/MIMOIB/data',
+        data_root='/home/wen/project2/data',  # 你的实际数据路径
         train_batch_size=batch_size,
         test_batch_size=100
     )
-    
+
+
     # Get data loaders
     train_loader = mnist_loader.get_train_loader()
     test_loader = mnist_loader.get_test_loader()
