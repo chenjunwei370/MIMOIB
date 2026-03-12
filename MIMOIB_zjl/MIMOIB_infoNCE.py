@@ -423,7 +423,7 @@ if __name__ == "__main__":
             self.test_SNR = 20
             self.Nr = 16
             self.Nt = 16
-            self.K_rician = 5
+            self.K_rician = 1
     
     config = Config()
 
